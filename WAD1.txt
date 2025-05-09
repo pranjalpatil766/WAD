@@ -1,1 +1,50 @@
-babyshark
+public 
+1)INDEX.html
+
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <a href="login.html">Go to Login</a>
+</body>
+</html>
+
+<!-- npm init
+npm i express
+node index.js -->
+
+2)LOGIN.html
+
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button {
+            background-color: pink;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
+
+
+INDEX.js
+
+const express = require('express')
+const app =express()
+
+app.use(express.static("public"));
+app.listen(3000);
