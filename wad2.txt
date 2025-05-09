@@ -1,1 +1,36 @@
-baby shark
+Step-by-Step Guide: Push Your Code to GitHub using Git Commands
+Step 1: Create a GitHub Account
+1. Go to https://github.com
+2. Click on Sign up.
+3. Enter your email, username, and password.
+4. Follow the setup instructions.
+Step 2: Install Git (if not already installed)
+- Windows: https://git-scm.com/downloads
+- macOS: brew install git
+- Linux: sudo apt install git
+Check version:
+git --version
+Step 3: Configure Git (one-time setup)
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+Step 4: Create a Repository on GitHub
+1. Log in to GitHub.
+2. Click the + icon > New repository.
+3. Enter repository name (e.g., my-first-repo).
+4. Choose Public/Private.
+5. Click Create repository.
+Step 5: Push Code using Git Commands
+A. Open terminal/command prompt and go to your project folder:
+cd path/to/your/project-folder
+B. Initialize Git:
+git init
+C. Add files to staging:
+git add .
+D. Commit the files:
+git commit -m "Initial commit"
+E. Connect to GitHub repo (replace URL):
+git remote add origin https://github.com/yourusername/my-first-repo.git
+F. Push your code:
+git push -u origin master
+(or use 'main' if that's the default)
+git push -u origin mainbaby shark
